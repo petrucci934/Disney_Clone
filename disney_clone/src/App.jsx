@@ -3,8 +3,6 @@ import Header from './components/Header'
 import Slider from './components/Slider'
 import ProductHouse from './components/ProductHouse'
 import GenreMovieList from './components/GenreMovieList'
-// import MovieList from './components/MovieList'
-
 
 function App() {
   
@@ -14,9 +12,7 @@ function App() {
         <Header/>
         <Slider/>
         <ProductHouse/>
-        <GenreMovieList/>
-        {/* <MovieList/> */}
-        
+        <GenreMovieList/>        
       </div>
        
       )
