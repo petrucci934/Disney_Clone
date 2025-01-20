@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 const MovieCard = ({movie}) => {
 
  const IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/original/'
-  return (
-    < >        
+  return (        
         <img 
         src={IMAGE_BASE_URL+movie.poster_path} 
         alt='movie card' 
@@ -12,8 +11,6 @@ const MovieCard = ({movie}) => {
         hover:border-[3px] border-gray-400 cursor-pointer
         hover:scale-110 transition-all duration-150 ease-in'
         />
-        
-    </>
   )
 }
 MovieCard.propTypes = {

@@ -1,8 +1,7 @@
-import { useEffect } from 'react';
+import { useEffect,useRef } from 'react';
 import GlobalApi from '../Services/GlobalApi';
 import { useState } from 'react';
 import { HiChevronLeft,HiChevronRight } from 'react-icons/hi'
-import { useRef } from 'react';
 
 const IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/original'
 
@@ -10,6 +9,7 @@ function Slider()  {
     const [movieList,setMovieList] = useState([])
     const elementRef = useRef()
     const screenWidht = window.innerWidth
+    
   useEffect(() => {
     getTrendingMovies();
   }, []);
